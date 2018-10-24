@@ -1,12 +1,18 @@
 <?php
-
+session_start();
+ob_start();
 use TastyRecipes\Controller\SessionManager;
 use TastyRecipes\Util\Util;
 
-require_once 'classes/TastyRecipes/Util/Util.php';
+require_once '../../classes/TastyRecipes/Util/Util.php';
 Util::init();
 
 $controller = SessionManager::getController();
+
+
+$user_uid = $_SESSION['u_id'];
+echo "$user_uid";
+
 
 if(isset($_SESSION['u_id']) && isset($_POST['meatballsSubmit']))
 {
@@ -25,7 +31,7 @@ if(isset($_SESSION['u_id']) && isset($_POST['meatballsSubmit']))
   echo "$message<br>";*/
 }
 
-if(isset($_SESSION['u_id']) && isset($_POST['pancakesSubmit']))
+elseif(isset($_SESSION['u_id']) && isset($_POST['pancakesSubmit']))
 {
   $user_uid = $_SESSION['u_uid'];
   $date = $_POST['date'];
@@ -40,4 +46,8 @@ if(isset($_SESSION['u_id']) && isset($_POST['pancakesSubmit']))
   echo "$user_uid<br>";
   echo "$date<br>";
   echo "$message<br>";*/
+}
+
+else{
+  echo "Noooooooooooooo";
 }

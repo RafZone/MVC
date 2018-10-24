@@ -50,7 +50,7 @@
       echo "<p>Please log in to comment</p>";
     }
 
-    //getcomments();
+    getcomments(1);
   ?>
 
 </div><br>

@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-//ob_start();
+ob_start();
 
 use TastyRecipes\Controller\SessionManager;
 use TastyRecipes\Util\Util;
@@ -15,8 +15,8 @@ $controller = SessionManager::getController();
 if(isset($_POST['submit']))
 {
 
-  $uid = mysqli_real_escape_string($conn, $_POST['uid']);
-  $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
+  $uid = htmlentities($_POST['uid'], ENT_QUOTES, 'UTF-8');
+  $pwd = htmlentities($_POST['pwd'], ENT_QUOTES, 'UTF-8');
 
   if(!empty($uid) && !empty($pwd) && ctype_print($uid) && ctype_print($pwd))
   {
@@ -27,6 +27,6 @@ if(isset($_POST['submit']))
 
   else
   {
-    header("Location: ../views/index.php?login=error");
+    header("Location: ../views/index.php?login=erroooooor");
   }
 }

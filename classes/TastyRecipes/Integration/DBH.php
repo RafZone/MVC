@@ -92,6 +92,8 @@ class DBH
       $sql = "INSERT INTO pancakescomments (user_uid, date, message) VALUES ('$userId', '$date', '$UserComment')";
     }
     mysqli_query($conn, $sql);
+    //echo "$sql";
+
 
   }
 
@@ -123,9 +125,9 @@ class DBH
         echo "<br>";
         echo "<form method = 'POST' action = '../../resources/extras/deleteComment.php'>";
         echo "<input type = 'hidden' name = 'cid' value = '".$row['cid']."'>";
-        if($page == 1)
+        if($pageId == 1)
           echo "<button class = 'btn' type = 'submit' name = 'meatballsDelete'>Delete</button>";
-        elseif ($page == 2)
+        elseif ($pageId == 2)
           echo "<button class = 'btn' type = 'submit' name = 'pancakesDelete'>Delete</button>";
         else
           echo "errrrooooooorrrrrrrrrr";

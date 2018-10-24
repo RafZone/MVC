@@ -1,0 +1,269 @@
+@import url("reset.css");
+
+.main-wrapper{
+  margin: 0 auto;
+  width: 1000px;
+}
+
+a{
+  text-decoration: none;
+}
+
+body {background-image: url("../images/background1.jpg");
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-attachment: fixed;
+	  background-position: center;}
+
+header nav{
+  width: 100%;
+  height: 60px;
+  /*background-color: #fff;*/
+}
+
+header nav ul{
+  float: left;
+}
+
+header nav ul li{
+  float: left;
+  list-style: none;
+}
+
+header nav ul li a{
+  font-family: arial;
+  font-size: 16px;
+  color: #111;
+  line-height: 63px;
+}
+
+header .nav-login{
+  float: right;
+}
+
+header .nav-login form{
+  float: left;
+  padding-top: 15px;
+}
+
+header .nav-login form input{
+  float: left;
+  width: 140px;
+  height: 30px;
+  padding: 0px 10px;
+  margin-right: 10px;
+  border: none;
+  background-color: #ccc;
+  font-family: arial;
+  font-size: 14px;
+  color: #111;
+  line-height: 30px;
+}
+
+/*header .nav-login form button{
+  float: left;
+  width: 60px;
+  height: 30px;
+  margin-right: 10px;
+  border: none;
+  background-color: #f3f3f3;
+  font-family: arial;
+  font-size: 14px;
+  color: #111;
+  cursor: pointer;
+}
+
+header .nav-login form button:hover{
+  background-color: #ccc;
+}
+
+header .nav-login a{
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: none;
+  float: left;
+  background-color: #fff;
+  font-family: arial;
+  font-size: 16px;
+  color: #111;
+  line-height: 63px;
+  cursor: pointer;
+}*/
+
+.main-container{
+  padding-top: 40px;
+}
+
+.main-container h2{
+  font-family: arial;
+  font-size: 40px;
+  color: #111;
+  line-height: 50px;
+  text-align: center;
+}
+
+/*signup.php*/
+
+.signup-form{
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.signup-form input{
+  width: 90%;
+  height: 40px;
+  padding: 0px 5%;
+  margin-bottom: 4px;
+  border: none;
+  background-color: #fff;
+  font-family: arial;
+  font-size: 16px;
+  color: #111;
+  line-height: 40px;
+}
+
+.signup-form button{
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: 40px;
+  border: none;
+  background-color: #222;
+  font-family: arial;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.signup-form button:hover{
+  background-color: #111;
+}
+
+.btn {background: #f00e19;
+	  background-image: -webkit-linear-gradient(top, #f00e19, #7308d6);
+	  background-image: -moz-linear-gradient(top, #f00e19, #7308d6);
+	  background-image: -ms-linear-gradient(top, #f00e19, #7308d6);
+	  background-image: -o-linear-gradient(top, #f00e19, #7308d6);
+	  background-image: linear-gradient(to bottom, #f00e19, #7308d6);
+	  -webkit-border-radius: 28;
+	  -moz-border-radius: 28;
+	  border-radius: 28px;
+	  font-family: Arial;
+	  color: #ffffff;
+	  font-size: 20px;
+	  padding: 10px 20px 10px 20px;
+	  text-decoration: none;}
+
+.btn:hover {background: #3c46fc;
+			background-image: -webkit-linear-gradient(top, #3c46fc, #c70c0c);
+			background-image: -moz-linear-gradient(top, #3c46fc, #c70c0c);
+			background-image: -ms-linear-gradient(top, #3c46fc, #c70c0c);
+			background-image: -o-linear-gradient(top, #3c46fc, #c70c0c);
+			background-image: linear-gradient(to bottom, #3c46fc, #c70c0c);
+			text-decoration: none;}
+
+.midd {
+  text-align: center;
+}
+
+/********************* Index **********************/
+
+.for-texts {margin:auto;
+  padding: 10px;
+	border-style: outset;
+	border-width: 5px;
+	border-radius:25px;
+	/*min-height: 20px;
+	text-align:center;*/
+	max-width:830px;
+  overflow: auto;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+#ramsy {float: right;
+		  height: 175px;
+		  margin: 5px;
+		  padding: 5px;}
+
+p{font-family: Arial;
+	font-size: 1.2em;
+	padding: 5px;
+}
+.chef {border-radius:25px;
+	   width: 200px;
+	   height: 120px;
+}
+
+.recbox {width: 220px;
+		 background-color: #f00e19;
+		 float: left;
+		 margin:10px;
+		 padding:5px;
+		 border-radius: 25px;}
+
+/*************Pages**************/
+
+.page{margin:auto;
+  padding: 20px;
+	border-style: outset;
+	border-width: 5px;
+	border-radius:25px;
+	min-height: 20px;
+	width:80%;
+  overflow: auto;
+}
+
+#picture{margin: 5px 20px;
+		 height: 300px;
+		 width: 500px;
+   float: right;
+ }
+
+.style{
+  font-size: 3em;
+  margin: 20px;
+  font-style: oblique;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.ingredients{
+  list-style-type: circle;
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+textarea{
+  width: 500px;
+  height: 100px;
+  background-color: #fff;
+  resize: none;
+}
+
+.comment-box {
+  width: 400px;
+  padding: 20px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  position: relative;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.user{
+  font-family: serif;
+  font-size: 1em;
+  color: blue;
+  text-decoration: underline;
+}
+
+.datef{
+  font-size: 0.6em;
+  font-style: italic;
+  color: blue;
+}

@@ -1,12 +1,12 @@
 <?php
 
 session_start();
-ob_start();
+//ob_start();
 
 use TastyRecipes\Controller\SessionManager;
 use TastyRecipes\Util\Util;
 
-require_once 'classes/TastyRecipes/Util/Util.php';
+require_once '../../classes/TastyRecipes/Util/Util.php';
 Util::init();
 
 $controller = SessionManager::getController();

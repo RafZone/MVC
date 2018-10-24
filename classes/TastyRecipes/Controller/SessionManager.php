@@ -11,7 +11,7 @@ class SessionManager
   public static function getController()
   {
     if(isset($_SESSION[self::CONTROLLER_KEY]))
-      {return unserialize($_SESSION);}
+      {return unserialize($_SESSION[self::CONTROLLER_KEY]);}
 
     else
     {return new Controller();}

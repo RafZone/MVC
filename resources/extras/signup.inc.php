@@ -3,7 +3,7 @@
 use TastyRecipes\Controller\SessionManager;
 use TastyRecipes\Util\Util;
 
-require_once 'classes/TastyRecipes/Util/Util.php';
+require_once '../../classes/TastyRecipes/Util/Util.php';
 Util::init();
 
 $controller = SessionManager::getController();
@@ -11,11 +11,11 @@ $controller = SessionManager::getController();
 if (isset($_POST['submit']))
 {
   //include_once 'dbh.inc.php';
-  $first = mysqli_real_escape_string($conn, $_POST['first']);
-  $last = mysqli_real_escape_string($conn, $_POST['last']);
-  $email = mysqli_real_escape_string($conn, $_POST['email']);
-  $uid = mysqli_real_escape_string($conn, $_POST['uid']);
-  $pwd = mysqli_real_escape_string($conn, $_POST['pwd']); //this could be the mistake ----> change to 'password'
+  $first = htmlentities ($_POST['first'], ENT_QUOTES, 'UTF-8');
+  $last = htmlentities($_POST['last'], ENT_QUOTES, 'UTF-8');
+  $email = htmlentities($_POST['email'], ENT_QUOTES, 'UTF-8');
+  $uid = htmlentities($_POST['uid'], ENT_QUOTES, 'UTF-8');
+  $pwd = htmlentities($_POST['pwd'], ENT_QUOTES, 'UTF-8'); //this could be the mistake ----> change to 'password'
 
   if(empty($first) || empty($last) || empty($email) || empty($uid) || empty($pwd))
   {
